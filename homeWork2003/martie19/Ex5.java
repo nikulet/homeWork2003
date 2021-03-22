@@ -1,5 +1,7 @@
 package homeWork2003.martie19;
 
+import java.util.Scanner;
+
 public class Ex5 {
     public static void main(String[] args) {
         /*
@@ -17,11 +19,14 @@ Which expressions will execute and which will not?
 Aici la fel, încercați singuri să ajungeți la rezultat, și să scrieți în
 comentarii alături de fiecare System.out.println care expresie este evaluată sau nu, și de ce
  */
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("        Exercitiul 5\n\nIntroduceti primul numar: ");
+        int aa=scanner.nextInt();
+        System.out.println("Introduceti al doilea numar: ");
+        int b=scanner.nextInt();
+        System.out.println("Introduceti al treilea numar: ");
+        int c=scanner.nextInt();
 
-        int aa = 18;
-        int b = 22;
-        int c = 30;
-        System.out.println("        Exercitiul 5\n\n");
         //                  19 > 18  ||
         //                   true    ||
         //                          true

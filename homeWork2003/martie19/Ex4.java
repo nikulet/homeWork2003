@@ -1,5 +1,7 @@
 package homeWork2003.martie19;
 
+import java.util.Scanner;
+
 public class Ex4 {
     public static void main(String[] args) {
         /*
@@ -11,7 +13,9 @@ Aici încercați să rezolvați singuri, și la tema pentru acasă să scrieți 
  cum am făcut și la lecție.
  */
 
-        int a = 7;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Introduceti un numar: ");
+        int a=scanner.nextInt();
         //             8  -  7 +  7  +   9  - 9  -   7  - 7  +   9
         //                1    +  7  +   9  - 9  -   7  - 7  +   9
         //                       8   +   9  - 9  -   7  - 7  +   9

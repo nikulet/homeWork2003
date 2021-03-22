@@ -1,4 +1,7 @@
 package homeWork2003.martie19;
+
+import java.util.Scanner;
+
 public class Ex2 {
     public static void main(String[] args) {
 
@@ -18,11 +21,16 @@ Your speed in miles/h is 0.26158804
 // 1h=3600scunde
 
         double speedMetersPerSeconds, speedKilometersPerHour, speedMilesPerHour;
-        // mile = 1.609D;
-        double meters = 2500D;
-        byte hour = 5;
-        byte minutes = 56;
-        byte seconds = 23;
+        // mile = 1609;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Introduceti numarul de metri: ");
+        int meters=scanner.nextInt();
+        System.out.println("Introduceti numarul de ore: ");
+        int hour=scanner.nextInt();
+        System.out.println("Introduceti numarul de minute: ");
+        int minutes=scanner.nextInt();
+        System.out.println("Introduceti numarul de seconds: ");
+        int seconds=scanner.nextInt();
 
         speedMetersPerSeconds = meters /(((hour*3600.0) +(minutes*60))+ seconds);    //meters%seconds/meters;
         speedKilometersPerHour = ((meters/1000.0F)/(hour+(minutes/60.0)+(seconds/3600.0)));
