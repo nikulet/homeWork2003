@@ -10,18 +10,14 @@ Expected Output :
 1 2 3 4 5 6
 Acest exercițiu este practică cu operatorul %
 */
-
         int nrr=123456;
-        int ras=nrr/nrr%nrr;
-        int ras1=nrr/nrr+1%nrr;
-        int ras2=nrr/nrr+2%nrr;
-        int ras3=nrr/nrr+3%nrr;
-        int ras4=nrr/nrr+4%nrr;
-        int ras5=nrr/nrr+5%nrr;
+        int ras=nrr/100000;
+        int ras1=nrr/10000;
+        int ras2=nrr/1000;
+        int ras3=nrr/100;
+        int ras4=nrr/10;
+        int ras5=nrr/1;
 
-        System.out.println("        Exercitiul 3\n\nRaspunsul: "+ras+" "+ras1+" "+ras2+" "+ras3+" "+ras4+" "+ras5+"\n");
-
-
-
+        System.out.println("        Exercitiul 3\n\nRaspunsul: "+ras5+"\n");
     }
 }

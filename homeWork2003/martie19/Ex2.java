@@ -18,20 +18,16 @@ Your speed in miles/h is 0.26158804
 // 1h=3600scunde
 
         double speedMetersPerSeconds, speedKilometersPerHour, speedMilesPerHour;
-        double mile = 1.609D;
+        // mile = 1.609D;
         double meters = 2500D;
         byte hour = 5;
         byte minutes = 56;
         byte seconds = 23;
 
-        speedMetersPerSeconds = meters % seconds / seconds;    //meters%seconds/meters;
-        speedKilometersPerHour = meters % hour / hour;
-        speedMilesPerHour = meters * mile / hour;
+        speedMetersPerSeconds = meters /(((hour*3600.0) +(minutes*60))+ seconds);    //meters%seconds/meters;
+        speedKilometersPerHour = ((meters/1000.0F)/(hour+(minutes/60.0)+(seconds/3600.0)));
+        speedMilesPerHour = ((meters/1609.0F)/(hour+(minutes/60.0F)+(seconds/3600.0F)));
         System.out.println("        Exercitiul 2\n\nYour speed in meters/second is: " + speedMetersPerSeconds + "\nYour speed in km/h is: " + speedKilometersPerHour +
                 "\nYour speed in miles/h is: " + speedMilesPerHour + "\n");
-
-
-
-
     }
 }
