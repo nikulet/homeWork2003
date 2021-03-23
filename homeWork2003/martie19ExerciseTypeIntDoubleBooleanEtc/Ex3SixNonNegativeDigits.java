@@ -1,5 +1,5 @@
-package homeWork2003.martie19;
-public class Ex3 {
+package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+public class Ex3SixNonNegativeDigits {
     public static void main(String[] args) {
                 /*
 3.Write a Java program to break an integer into a sequence of individual digits.

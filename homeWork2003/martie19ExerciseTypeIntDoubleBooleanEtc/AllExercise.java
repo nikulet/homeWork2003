@@ -1,6 +1,5 @@
-package homeWork2003.martie19;
-
-public class ToateExercitile {
+package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+public class AllExercise {
         public static void main(String[] args) {
             System.out.println("*************************************************************\n");
 

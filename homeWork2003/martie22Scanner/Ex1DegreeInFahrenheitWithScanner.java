@@ -1,6 +1,6 @@
-package homeWork2003.martie22;
+package homeWork2003.martie22Scanner;
 import java.util.Scanner;
-public class Ex1 {
+public class Ex1DegreeInFahrenheitWithScanner {
     public static void main(String[] args) {
         System.out.println("*************************************************************\n");
 

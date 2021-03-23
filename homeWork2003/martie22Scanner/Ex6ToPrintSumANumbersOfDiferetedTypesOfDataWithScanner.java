@@ -1,6 +1,6 @@
-package homeWork2003.martie22;
+package homeWork2003.martie22Scanner;
 import java.util.Scanner;
-public class Ex7 {
+public class Ex6ToPrintSumANumbersOfDiferetedTypesOfDataWithScanner {
     public static void main(String[] args) {
         /*
 7. Create a class named DeclareDatatype.

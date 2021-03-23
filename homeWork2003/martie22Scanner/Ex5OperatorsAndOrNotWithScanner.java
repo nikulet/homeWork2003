@@ -1,6 +1,6 @@
-package homeWork2003.martie22;
+package homeWork2003.martie22Scanner;
 import java.util.Scanner;
-public class Ex5 {
+public class Ex5OperatorsAndOrNotWithScanner {
     public static void main(String[] args) {
         /*
 5. What's the output of this program?

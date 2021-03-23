@@ -1,5 +1,5 @@
-package homeWork2003.martie19;
-public class Ex1 {
+package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+public class Ex1DegreeInFahrenheit {
     public static void main(String[] args) {
         /*
         1.Write a Java program to convert temperature from Fahrenheit to Celsius degree.

@@ -1,6 +1,6 @@
-package homeWork2003.martie22;
+package homeWork2003.martie22Scanner;
 import java.util.Scanner;
-public class Ex4 {
+public class Ex4IncrimentedDectimentedOperationsWithScanner{
     public static void main(String[] args) {
         /*
 4. What's the result of given expression?

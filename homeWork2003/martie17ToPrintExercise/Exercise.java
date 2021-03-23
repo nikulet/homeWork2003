@@ -1,10 +1,7 @@
-package homeWork2003.martie17;
-
-public class Exercitile {
+package homeWork2003.martie17ToPrintExercise;
+public class Exercise {
         public static void main(String[] args) {
-
             System.out.println("Ex 1\n");
-
             System.out.println("De \"miliarde\" era tipul,\n" +
                     "Spre-navuţire-ncrâncenat,\n" +
                     "Da-n filmul vieţii lui văd \"clipul\",\n" +

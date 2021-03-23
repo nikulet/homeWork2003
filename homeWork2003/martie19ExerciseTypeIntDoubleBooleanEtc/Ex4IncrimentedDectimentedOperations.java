@@ -1,5 +1,5 @@
-package homeWork2003.martie19;
-public class Ex4 {
+package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+public class Ex4IncrimentedDectimentedOperations{
     public static void main(String[] args) {
         /*
 4. What's the result of given expression?

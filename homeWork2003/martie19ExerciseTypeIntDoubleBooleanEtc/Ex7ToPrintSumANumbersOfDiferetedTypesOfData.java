@@ -1,5 +1,5 @@
-package homeWork2003.martie19;
-public class Ex7 {
+package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+public class Ex7ToPrintSumANumbersOfDiferetedTypesOfData {
     public static void main(String[] args) {
         /*
 7. Create a class named DeclareDatatype.
