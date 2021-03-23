@@ -1,4 +1,4 @@
-package homeWork2003.martie19;
+package homeWork2003.martie22;
 import java.util.Scanner;
 public class Ex1 {
     public static void main(String[] args) {
@@ -13,13 +13,9 @@ Expected Output:
          */
 
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Introduceti temperatura in Fahrenheit : ");
+        System.out.println("        Exercise 1\n\nWrite temperature in Fahrenheit : ");
         int degreeInFahrenheit=scanner.nextInt();
-
         float toCelsius = (((degreeInFahrenheit - 32) * 5) / 9);  //to calculate in Celcius
-
-        System.out.println("        Exercitiul 1\n\n" + (float) degreeInFahrenheit + " degree Fahrenheit is equals to " + toCelsius + " in Celsius.\n");
-
-        System.out.println("*************************************************************\n");
+        System.out.println( (float) degreeInFahrenheit + " degree Fahrenheit is equals to " + toCelsius + " in Celsius.\n");
     }
 }
