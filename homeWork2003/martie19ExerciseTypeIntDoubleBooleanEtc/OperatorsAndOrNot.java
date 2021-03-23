@@ -1,5 +1,5 @@
 package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
-public class Ex5OperatorsAndOrNot {
+public class OperatorsAndOrNot {
     public static void main(String[] args) {
         /*
 5. What's the output of this program?

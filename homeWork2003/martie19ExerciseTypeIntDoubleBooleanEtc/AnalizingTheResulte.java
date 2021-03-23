@@ -1,5 +1,5 @@
 package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
-public class Ex6AnalizingTheResulte {
+public class AnalizingTheResulte {
     public static void main(String[] args) {
         /*
 6. Re-write the following example, with shorter operators. Before running the program, in the comments,

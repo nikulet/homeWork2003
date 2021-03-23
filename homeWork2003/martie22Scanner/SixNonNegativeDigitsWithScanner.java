@@ -1,6 +1,6 @@
 package homeWork2003.martie22Scanner;
 import java.util.Scanner;
-public class Ex3SixNonNegativeDigitsWithScanner {
+public class SixNonNegativeDigitsWithScanner {
     public static void main(String[] args) {
                 /*
 3.Write a Java program to break an integer into a sequence of individual digits.
