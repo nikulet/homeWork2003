@@ -1,6 +1,8 @@
-package homeWork2003.martie22Scanner;
+package tekWillHomeWorks.homeWork2003.martie22Scanner;
+
 import java.util.Scanner;
-public class IncrimentedDectimentedOperationsWithScanner{
+
+public class IncrimentedDectimentedOperationsWithScanner {
     public static void main(String[] args) {
         /*
 4. What's the result of given expression?
@@ -10,9 +12,9 @@ What's the result of a after evaluating the expression?
 Aici încercați să rezolvați singuri, și la tema pentru acasă să scrieți cum ați ajuns la rezultat,
  cum am făcut și la lecție.
  */
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("        Exercise 4\n\nWrite a number: ");
-        int a=scanner.nextInt();
+        int a = scanner.nextInt();
         //             8  -  7 +  7  +   9  - 9  -   7  - 7  +   9
         //                1    +  7  +   9  - 9  -   7  - 7  +   9
         //                       8   +   9  - 9  -   7  - 7  +   9
@@ -22,6 +24,6 @@ Aici încercați să rezolvați singuri, și la tema pentru acasă să scrieți 
         //                                               -6  +   9
         //                                                    3
         int result = ++a - --a + a++ + ++a - a-- - --a - a++ + ++a;
-        System.out.println("The resulte is: "+result+"\n");   //Resulte is 3
+        System.out.println("The resulte is: " + result + "\n");   //Resulte is 3
     }
 }

@@ -1,6 +1,4 @@
-package homeWork2003.martie22Scanner;
-
-import java.util.InputMismatchException;
+package tekWillHomeWorks.homeWork2003.martie22Scanner;
 import java.util.Scanner;
 
 public class DegreeInFahrenheitWithScanner {

@@ -1,5 +1,7 @@
-package homeWork2003.martie22Scanner;
+package tekWillHomeWorks.homeWork2003.martie22Scanner;
+
 import java.util.Scanner;
+
 public class OperatorsAndOrNotWithScanner {
     public static void main(String[] args) {
         /*
@@ -17,13 +19,13 @@ Which expressions will execute and which will not?
 Aici la fel, încercați singuri să ajungeți la rezultat, și să scrieți în
 comentarii alături de fiecare System.out.println care expresie este evaluată sau nu, și de ce
  */
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("        Exercise 5\n\nWrite a first number: ");
-        int aa=scanner.nextInt();
+        int aa = scanner.nextInt();
         System.out.println("Write a seconde number: ");
-        int b=scanner.nextInt();
+        int b = scanner.nextInt();
         System.out.println("Write a third number: ");
-        int c=scanner.nextInt();
+        int c = scanner.nextInt();
 
         //                  19 > 18  ||
         //                   true    ||
@@ -43,6 +45,6 @@ comentarii alături de fiecare System.out.println care expresie este evaluată s
 
         System.out.println("aa = " + aa);  //The aa is equals with 19 it is the last number
         System.out.println("b = " + b);   //The b is equals with 21
-        System.out.println("c = " + c+"\n");  //The c is equals with 31 it is the last number
+        System.out.println("c = " + c + "\n");  //The c is equals with 31 it is the last number
     }
 }

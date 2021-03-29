@@ -1,4 +1,5 @@
-package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+package tekWillHomeWorks.homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+
 public class SpeedInMetersSecondHours {
     public static void main(String[] args) {
 
@@ -23,9 +24,9 @@ Your speed in miles/h is 0.26158804
         byte minutes = 56;
         byte seconds = 23;
 
-        speedMetersPerSeconds = meters /(((hour*3600.0) +(minutes*60))+ seconds);    //meters%seconds/meters;
-        speedKilometersPerHour = ((meters/1000.0F)/(hour+(minutes/60.0)+(seconds/3600.0)));
-        speedMilesPerHour = ((meters/1609.0F)/(hour+(minutes/60.0F)+(seconds/3600.0F)));
+        speedMetersPerSeconds = meters / (((hour * 3600.0) + (minutes * 60)) + seconds);    //meters%seconds/meters;
+        speedKilometersPerHour = ((meters / 1000.0F) / (hour + (minutes / 60.0) + (seconds / 3600.0)));
+        speedMilesPerHour = ((meters / 1609.0F) / (hour + (minutes / 60.0F) + (seconds / 3600.0F)));
         System.out.println("        Exercise 2\n\nYour speed in meters/second is: " + speedMetersPerSeconds + "\nYour speed in km/h is: " + speedKilometersPerHour +
                 "\nYour speed in miles/h is: " + speedMilesPerHour + "\n");
     }

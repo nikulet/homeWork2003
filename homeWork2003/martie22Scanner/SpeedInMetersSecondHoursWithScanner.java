@@ -1,5 +1,7 @@
-package homeWork2003.martie22Scanner;
+package tekWillHomeWorks.homeWork2003.martie22Scanner;
+
 import java.util.Scanner;
+
 public class SpeedInMetersSecondHoursWithScanner {
     public static void main(String[] args) {
 
@@ -19,19 +21,19 @@ Your speed in miles/h is 0.26158804
 
         double speedMetersPerSeconds, speedKilometersPerHour, speedMilesPerHour;
         // mile = 1609;
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("        Exercise 2\n\nWrite a number of meters: ");
-        int meters=scanner.nextInt();
+        int meters = scanner.nextInt();
         System.out.println("Write a number of hours: ");
-        int hour=scanner.nextInt();
+        int hour = scanner.nextInt();
         System.out.println("Write a number of minutes: ");
-        int minutes=scanner.nextInt();
+        int minutes = scanner.nextInt();
         System.out.println("Write a number of seconds: ");
-        int seconds=scanner.nextInt();
+        int seconds = scanner.nextInt();
 
-        speedMetersPerSeconds = meters /(((hour*3600.0) +(minutes*60))+ seconds);    //meters%seconds/meters;
-        speedKilometersPerHour = ((meters/1000.0F)/(hour+(minutes/60.0)+(seconds/3600.0)));
-        speedMilesPerHour = ((meters/1609.0F)/(hour+(minutes/60.0F)+(seconds/3600.0F)));
+        speedMetersPerSeconds = meters / (((hour * 3600.0) + (minutes * 60)) + seconds);    //meters%seconds/meters;
+        speedKilometersPerHour = ((meters / 1000.0F) / (hour + (minutes / 60.0) + (seconds / 3600.0)));
+        speedMilesPerHour = ((meters / 1609.0F) / (hour + (minutes / 60.0F) + (seconds / 3600.0F)));
         System.out.println("Your speed in meters/second is: " + speedMetersPerSeconds + "\nYour speed in km/h is: " + speedKilometersPerHour +
                 "\nYour speed in miles/h is: " + speedMilesPerHour + "\n");
     }

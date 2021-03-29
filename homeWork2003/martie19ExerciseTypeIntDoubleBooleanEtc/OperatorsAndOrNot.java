@@ -1,4 +1,5 @@
-package homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+package tekWillHomeWorks.homeWork2003.martie19ExerciseTypeIntDoubleBooleanEtc;
+
 public class OperatorsAndOrNot {
     public static void main(String[] args) {
         /*
@@ -38,6 +39,6 @@ comentarii alături de fiecare System.out.println care expresie este evaluată s
 
         System.out.println("aa = " + aa);  //The aa is equals with 19 it is the last number
         System.out.println("b = " + b);   //The b is equals with 21
-        System.out.println("c = " + c+"\n");  //The c is equals with 31 it is the last number
+        System.out.println("c = " + c + "\n");  //The c is equals with 31 it is the last number
     }
 }

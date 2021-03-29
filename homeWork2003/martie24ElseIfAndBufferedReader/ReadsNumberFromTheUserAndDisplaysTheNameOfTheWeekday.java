@@ -1,4 +1,4 @@
-package homeWork2003.martie24ElseIfAndBufferedReader;
+package tekWillHomeWorks.homeWork2003.martie24ElseIfAndBufferedReader;
 
 import java.io.BufferedReader;
 import java.io.IOException;
