@@ -32,24 +32,24 @@ Use a switch statement for this exercise and limit yourself to +, -, *, / operat
         double secondNumber = Double.parseDouble(reader.readLine());
         System.out.println("Please,enter what operation do you have to execut(+,-,*,or /): ");
         String operator = reader.readLine();
-
-        double result = firstNumber + secondNumber;
-        double result1 = firstNumber - secondNumber;
-        double result2 = firstNumber * secondNumber;
-        double result3 = firstNumber / secondNumber;
+        double result = 0;
 
         switch (operator) {
             case "+":
+                result = firstNumber + secondNumber;
                 System.out.println("\n" + firstNumber + operator + secondNumber + "=" + result);
                 break;
             case "-":
-                System.out.println("\n" + firstNumber + operator + secondNumber + "=" + result1);
+                result = firstNumber - secondNumber;
+                System.out.println("\n" + firstNumber + operator + secondNumber + "=" + result);
                 break;
             case "*":
-                System.out.println("\n" + firstNumber + operator + secondNumber + "=" + result2);
+                result = firstNumber * secondNumber;
+                System.out.println("\n" + firstNumber + operator + secondNumber + "=" + result);
                 break;
             case "/":
-                System.out.println("\n" + firstNumber + operator + secondNumber + "=" + result3);
+                result = firstNumber / secondNumber;
+                System.out.println("\n" + firstNumber + operator + secondNumber + "=" + result);
                 break;
             default:
                 System.out.println("Attention!!!You operator or number is not corect");
