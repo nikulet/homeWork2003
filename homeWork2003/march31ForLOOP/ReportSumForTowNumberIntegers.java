@@ -12,16 +12,15 @@ public class ReportSumForTowNumberIntegers {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter first number: ");
-        int number1 = scanner.nextInt();
-        System.out.println("Enter first number: ");
-        int number2 = scanner.nextInt();
-        int nr1 = number1;
+        System.out.print("Enter first number: ");
+        final int number1 = scanner.nextInt();
+        System.out.print("Enter first number: ");
+        final int number2 = scanner.nextInt();
         int sum = 0;
-        for (; number1 <= number2; number1++) {
-            sum += number1;
+        for (int i = 2; i <= number2; i++) {
+            sum += i;
         }
         System.out.println("The sum of all" +
-                " the integers from " + nr1 + " through " + number2 + " is " + sum + ".");
+                " the integers from " + number1 + " through " + number2 + " is \"" + sum + "\".");
     }
 }

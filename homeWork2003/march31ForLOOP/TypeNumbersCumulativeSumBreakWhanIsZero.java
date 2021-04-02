@@ -11,7 +11,7 @@ public class TypeNumbersCumulativeSumBreakWhanIsZero {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sumNumberEntred = 0;
-        for (int i = 1; 0 < i || i < 0; i++) {
+        for (int i = 1;  i < 0; i++) {
             System.out.print("Enter a number: ");
             int number = scanner.nextInt();
             if (number == 0) break;
