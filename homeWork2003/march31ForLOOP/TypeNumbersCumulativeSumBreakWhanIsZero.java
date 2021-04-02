@@ -11,12 +11,11 @@ public class TypeNumbersCumulativeSumBreakWhanIsZero {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sumNumberEntred = 0;
-        for (int i = 1;  i < 0; i++) {
-            System.out.print("Enter a number: ");
-            int number = scanner.nextInt();
-            if (number == 0) break;
-            sumNumberEntred += number;
+        System.out.print("Enter a number: ");
+        for (int number = scanner.nextInt(); number !=0; number = scanner.nextInt() ){
+            sumNumberEntred+= number;
             System.out.println("Cumulativ sum of the entries: " + sumNumberEntred);
+            System.out.print("Enter a number: ");
         }
     }
 }
