@@ -25,20 +25,45 @@ public class FindTheMaximumAndMinimumElementInAnArray {
         int number = scanner.nextInt();
         System.out.println("Input " + number + " elements in the array.");
         int[] arrayNumber = new int[number];
-        int nr = 1, max = 0, min = 0, s = 0, e = 0;
+        int nr = 1, max = 0, min = 0;
         for (int i = 0; i < arrayNumber.length; i++) {
             System.out.print("Input " + nr + " element in the array: ");
             int declaretValue = scanner.nextInt();
             arrayNumber[i] = declaretValue;
             nr++;
-            System.out.println("element -" + i + ":" + declaretValue);
-            for (int j = 0; j < arrayNumber.length; j++) {
-                if (declaretValue > arrayNumber[j] || declaretValue > max) {  //is valid for two number only
-                    max = declaretValue;   //max number
-
-                } else if (declaretValue < arrayNumber[j] || declaretValue <= max) {
-                    min = declaretValue;  //min number
-                }
+        }
+        System.out.println();
+        for (int g = 0; g < arrayNumber.length; g++) {
+            System.out.println("element -" + g + ":" + arrayNumber[g]);
+        }
+        for (int j = 0, l = 1; l < arrayNumber.length; l++) {
+            if (arrayNumber[j] > arrayNumber[l]) {  //is valid for two number only
+                max = arrayNumber[j];
+                min = arrayNumber[l];
+            } else {
+                max = arrayNumber[l];
+                min = arrayNumber[j];
+            }
+        }
+        for (int j = 0, l = 1, n = 2; n < arrayNumber.length; n++) {
+            if ((arrayNumber[j] > arrayNumber[l] && arrayNumber[j] > arrayNumber[n]) && (arrayNumber[l] > arrayNumber[n])) {
+                max = arrayNumber[j];   //max number j
+                min = arrayNumber[n];   //minim n
+            } else if ((arrayNumber[j] > arrayNumber[l] && arrayNumber[j] > arrayNumber[n]) && (arrayNumber[l] < arrayNumber[n])) {
+                max = arrayNumber[j];
+                min = arrayNumber[l];
+            } else if ((arrayNumber[j] > arrayNumber[l] && arrayNumber[j] < arrayNumber[n]) && (arrayNumber[j] < arrayNumber[n])) {
+                max = arrayNumber[n];
+                min = arrayNumber[l];
+            } else if ((arrayNumber[j] < arrayNumber[l] && arrayNumber[j] < arrayNumber[n]) && (arrayNumber[l] < arrayNumber[n])) {
+                max = arrayNumber[n];  //max n
+                min = arrayNumber[j];  //min j
+            } else if ((arrayNumber[j] < arrayNumber[l] && arrayNumber[j] < arrayNumber[n]) && (arrayNumber[l] > arrayNumber[n])) {
+                max = arrayNumber[l];
+                min = arrayNumber[j];
+            } else if ((arrayNumber[j] < arrayNumber[l] && arrayNumber[j] > arrayNumber[n]) && (arrayNumber[l] > arrayNumber[j])) {
+                max = arrayNumber[l];
+                min = arrayNumber[n];
             }
         }
         System.out.println("\n" + Arrays.toString(arrayNumber) + "\n");
@@ -46,6 +71,4 @@ public class FindTheMaximumAndMinimumElementInAnArray {
         System.out.println("Minimum element is: " + min);
     }
 }
-
-//output incorect nu de fiecare data
 

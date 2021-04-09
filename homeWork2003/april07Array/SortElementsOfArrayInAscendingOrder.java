@@ -28,25 +28,62 @@ public class SortElementsOfArrayInAscendingOrder {
         int number = scanner.nextInt();
         System.out.println("Input " + number + " elements in the array.");
         int[] arrayNumber = new int[number];
-        int nr = 1, s = 0, e = 0, a = 0, max = 0;
+        int nr = 1, b = 0, c = 0, a = 0;
         for (int i = 0; i < arrayNumber.length; i++) {
             System.out.print("Input " + nr + " element in the array: ");
             int declaretValue = scanner.nextInt();
             arrayNumber[i] = declaretValue;
             nr++;
-            if (arrayNumber[i] > s || arrayNumber[0] > arrayNumber[1] && arrayNumber[0] > arrayNumber[2] &&
-                    arrayNumber[0] > arrayNumber[3] || arrayNumber[0] > arrayNumber[4]) {
-                e = arrayNumber[0];
-
-                if (arrayNumber[1] > arrayNumber[i] && arrayNumber[1] < arrayNumber[2] &&
-                        arrayNumber[1] > arrayNumber[3] && arrayNumber[1] > arrayNumber[4]) {
-                    a = arrayNumber[1];
-                }
-            }
-
         }
-        System.out.println("\n" + Arrays.toString(arrayNumber) + "\n");
-        System.out.println("Elements of array in sorted ascending order: " + e);
+        System.out.println();
+        for (int j = 0; j < arrayNumber.length; j++) {
+            System.out.println("element -" + j + ":" + arrayNumber[j]);
+        }
+        for (int l = 0, g = 1; g < arrayNumber.length; g++) {
+
+            if (arrayNumber[l] > arrayNumber[g]) {
+                a = arrayNumber[g];
+                b = arrayNumber[l];
+            }
+        }
+//*********************************************************
+        for (int l = 0, g = 1, x = 2; x < arrayNumber.length; x++) {
+            if ((arrayNumber[l] > arrayNumber[g] && arrayNumber[l] > arrayNumber[x])
+                    && (arrayNumber[g] > arrayNumber[x])) {
+                a = arrayNumber[x];
+                b = arrayNumber[g];
+                c = arrayNumber[l];
+            } else if ((arrayNumber[l] > arrayNumber[g] && arrayNumber[l] > arrayNumber[x])
+                    && (arrayNumber[g] < arrayNumber[x])) {
+                a = arrayNumber[g];
+                b = arrayNumber[x];
+                c = arrayNumber[l];
+            } else if ((arrayNumber[l] > arrayNumber[g] && arrayNumber[l] < arrayNumber[x])
+                    && (arrayNumber[g] < arrayNumber[x])) {
+                a = arrayNumber[g];
+                b = arrayNumber[l];
+                c = arrayNumber[x];
+            }
+            else if ((arrayNumber[l] < arrayNumber[g] && arrayNumber[l] < arrayNumber[x])
+                    && (arrayNumber[g] < arrayNumber[x])) {
+                a = arrayNumber[l];
+                b = arrayNumber[g];
+                c = arrayNumber[x];
+            }else if ((arrayNumber[l] < arrayNumber[g] && arrayNumber[l] < arrayNumber[x])
+                    && (arrayNumber[g] > arrayNumber[x])) {
+                a = arrayNumber[l];
+                b = arrayNumber[x];
+                c = arrayNumber[g];
+            }
+            else if ((arrayNumber[l] < arrayNumber[g] && arrayNumber[l] > arrayNumber[x])
+                    && (arrayNumber[l] > arrayNumber[x])) {
+                a = arrayNumber[g];
+                b = arrayNumber[x];
+                c = arrayNumber[l];
+            }
+            System.out.println("\n" + Arrays.toString(arrayNumber) + "\n");
+            System.out.println("Elements of array in sorted ascending order: " + a + " " + b+" "+c);
+        }
     }
 }
 //Out put is not corect

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class CountNumberOfDuplicateElementsInAnArray {
     public static void main(String[] args) {
         /*
-Write a program in Java to count a total number of duplicate elements in an array.
+2.  Write a program in Java to count a total number of duplicate elements in an array.
 Test Data:
 Input the number of elements to be stored in the array: 3
 Input 3 elements in the array:
@@ -31,9 +31,9 @@ Total number of duplicate elements found in the array is: 1
                 if (numbersOfArray[j] == nr1) {  //it's working only for one,two dublicate, for three ore
                     //  more is not working
                     add += 1;
-                     if (add == 3) {
-                         add -= 1;
-                     }
+                    if (add == 3) {
+                        add -= 1;
+                    }
                 }
             }
             numbersOfArray[i] = nr1;//puting the value of nr1 in to array
@@ -45,3 +45,4 @@ Total number of duplicate elements found in the array is: 1
     }
 }
 
+//maximul de cifre este 3 din care depisteaza daca sunt duplicate numerele sau nu
