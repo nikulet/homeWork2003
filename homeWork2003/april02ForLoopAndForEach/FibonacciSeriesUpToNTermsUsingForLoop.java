@@ -1,4 +1,4 @@
-package tekWillHomeWorks.homeWork2003.march02ForLoopAndForEach;
+package tekWillHomeWorks.homeWork2003.april02ForLoopAndForEach;
 
 
 import java.util.Scanner;
