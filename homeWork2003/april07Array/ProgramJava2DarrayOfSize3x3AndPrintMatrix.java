@@ -33,20 +33,23 @@ cu for-each loop
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number of line & row for matice bi-dimensional: ");
+        System.out.print("Enter the number of line & row for matice bi-dimensional: ");
         int lineRow = scanner.nextInt();
+
         int[][] matriceBiDimensional = new int[lineRow][lineRow];
         int nr = 0;
         for (int i = 0; i < matriceBiDimensional.length; i++) {
-            for (int j = 0; j < matriceBiDimensional.length; j++) {
-                System.out.print("Enter a number for matrix bi-dimensional: ");
+            for (int j = 0; j < matriceBiDimensional[i].length; j++) {
+                System.out.print("Enter a number for matrix bi-dimensional: [" + i + "][" + j + "] position: ");
                 int lineRowNumber = scanner.nextInt();
-                matriceBiDimensional[i][j] = i + lineRowNumber;
+                matriceBiDimensional[i][j] = lineRowNumber;
             }
         }
+        System.out.println("\nMatrix:");
         for (int k = 0; k < matriceBiDimensional.length; ++k) {
-            System.out.print(Arrays.toString(matriceBiDimensional[k]));
+            System.out.print("\n" + Arrays.toString(matriceBiDimensional[k]));
         }
+
         System.out.println("\n\nThe matrix is: ");
         for (int g = 0; g < matriceBiDimensional.length; g++) {
             for (int t = 0; t < matriceBiDimensional.length; t++) {
@@ -57,5 +60,3 @@ cu for-each loop
         }
     }
 }
-
-//one problem with to print the resalt
