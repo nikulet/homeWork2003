@@ -20,47 +20,32 @@ MenuOfferingLabeledWitheALetter {
         A maple is a tree.
          */
         Scanner scanner = new Scanner(System.in);
-
-//        System.out.println("Please enter a c,p,t or g: ");
-//        System.out.println("c)carnivore         p)pianist\n" +
-//                "t)tree              g)game");
-//        String letter=scanner.nextLine();
-        boolean leter = false;
-        while (!false) {
-            letter();
+        boolean leter = true;
+        String  let=null;
+        while (leter) {
+            System.out.println("c) carnivore  \np) pianist \nt) tree     \ng) game");
             System.out.println("Please enter a c,p,t or g: ");
             String letters = scanner.nextLine();
+            let=letters;
             if (letters.equals("c") || letters.equals("p") ||
-                    letters.equals("t") || letters.equals("g"))
-                leter = true;
-
+                    letters.equals("t") || letters.equals("g")) {
+                leter = false;
+            }
+        }
+        switch (let) {
+            case "c":
+                System.out.println("Tinger is a animal carnivore.");
+                break;
+            case "t":
+                System.out.println("A maple is a tree.");
+                break;
+            case "p":
+                System.out.println("Alfred Brendel is a pianist.");
+                break;
+            case "g":
+                System.out.println("Contra Straik is a game.");
+                break;
         }
     }
+}
 
-
-
-    static  void letter(){
-        System.out.println("c)carnivore         p)pianist\n" +
-                "t)tree              g)game");
-    }
-
-
-
-
-static void  executeOption(){
-//        switch () {
-//            case "c":
-//                System.out.println("Tinger is a animal carnivore.");
-//                break;
-//            case "t":
-//                System.out.println("A maple is a tree.");
-//                break;
-//            case "p":
-//                System.out.println("Alfred Brendel is a pianist.");
-//                break;
-//            case "g":
-//                System.out.println("Contra Straik is a game.");
-//                break;
-//        }
-        }
-    }
