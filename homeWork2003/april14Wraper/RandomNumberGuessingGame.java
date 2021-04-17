@@ -15,11 +15,12 @@ public class RandomNumberGuessingGame {
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
+        int randomNumber = random.nextInt(50);
         boolean right = true;
         while (right) {
             System.out.print("Enter a number of 0 to 50 : ");
             int numberUser = scanner.nextInt();
-            int randomNumber = random.nextInt(5);
+//            int randomNumber = random.nextInt(50);
             System.out.println("Number user is: " + numberUser + ", and random number is: " + randomNumber + ".");
             if (numberUser > randomNumber) {
                 System.out.println("\"Too higt, try again.\"");

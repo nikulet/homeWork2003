@@ -1,6 +1,5 @@
 package tekWillHomeWorks.homeWork2003.april14Wraper;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BusinessCheckISBN13 {
@@ -19,40 +18,35 @@ public class BusinessCheckISBN13 {
         Enter the first 12 digits of an ISBN-13 as a string: 97801320
         97801320 is an invalid input
          */
-//        Scanner scanner = new Scanner(System.in);
-//            System.out.print("Enter the first 12 digits of an ISBN-13 as a string: ");
-//            String numberISBN = scanner.next();
-//
-//            long n = Long.parseLong(numberISBN); //am convertit numerile String in int
-//            System.out.println("Stringul cu numere convertit intrun int de" +
-//                    " tip primitiva este " + n);
-//            int ds = numberISBN.length();  //aflam cite cifre contine Stringul introdus de la user cu cifre
-//            System.out.println("Numarul introdus contine " + ds + " cifre.");
-
-
-// Ce metoda sa folosec pentru a lua o cifra cite o cifra din long n   ??? pentru cazul de mai sus
-
-
         Scanner scanner = new Scanner(System.in);
-        int b = 0;
-        int[] numbersConvertingFromStringToInt = new int[12];
-        String[] theNumbersISBN = new String[12];
-        for (int i = 0; i < 12; i++) {
-            System.out.print("Enter a number for ISBN: ");
-            String numbersISBN = scanner.nextLine();
-            theNumbersISBN[i] = numbersISBN;
-            int n = Integer.parseInt(theNumbersISBN[i]);
-            numbersConvertingFromStringToInt[i] = n;
+        System.out.print("Enter the first 12 digits of an ISBN-13 as a string: ");
+        String numberISBN = scanner.next();
+        long b = 0, d = 0;
+        long n = Long.parseLong(numberISBN); //am convertit numerile String in int
+        System.out.println("The String converting in long is: " + n);
+        int ds = numberISBN.length();  //aflam cite cifre contine Stringul introdus de la user cu cifre
+        System.out.println("The number contains " + ds + " numbers.");
+        long[] stringconvertToNumber = new long[numberISBN.length()];
+        for (int i = 0; i < numberISBN.length(); i++) {
+            char c = numberISBN.charAt(i);
+            long k = Character.digit(c, 10);
+            stringconvertToNumber[i] = k;
         }
-        System.out.print("\nThe ISBN-13 number is: ");
-        for (int nr : numbersConvertingFromStringToInt) {
-            System.out.print(nr + " ");
 
+        for (long copyNumbers : stringconvertToNumber) {
+            System.out.print(copyNumbers + " ");
         }
-        b = 10 - (numbersConvertingFromStringToInt[0] + (3 * numbersConvertingFromStringToInt[1]) + numbersConvertingFromStringToInt[2] + (3 * numbersConvertingFromStringToInt[3]) + numbersConvertingFromStringToInt[4] + (3 * numbersConvertingFromStringToInt[5]) + numbersConvertingFromStringToInt[6] + (3 * numbersConvertingFromStringToInt[7]) + numbersConvertingFromStringToInt[8] + (3 * numbersConvertingFromStringToInt[9]) + numbersConvertingFromStringToInt[10] + (3 * numbersConvertingFromStringToInt[11])) % 10;
+
+        if (stringconvertToNumber.length != 12) {
+            System.out.println(" is an invalid input");
+        }
+
+        b = 10 - (stringconvertToNumber[0] + (3 * stringconvertToNumber[1]) + stringconvertToNumber[2] + (3 * stringconvertToNumber[3]) + stringconvertToNumber[4] + (3 * stringconvertToNumber[5]) + stringconvertToNumber[6] + (3 * stringconvertToNumber[7]) + stringconvertToNumber[8] + (3 * stringconvertToNumber[9]) + stringconvertToNumber[10] + (3 * stringconvertToNumber[11])) % 10;
+
         if (b == 10) {
             System.out.print(0);
-        } else
+        } else if (b != 10) {
             System.out.print(b);
+        }
     }
 }
