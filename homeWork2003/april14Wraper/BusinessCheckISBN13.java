@@ -21,32 +21,23 @@ public class BusinessCheckISBN13 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the first 12 digits of an ISBN-13 as a string: ");
         String numberISBN = scanner.next();
-        long b = 0, d = 0;
+        long b = 0;
         long n = Long.parseLong(numberISBN); //am convertit numerile String in int
         System.out.println("The String converting in long is: " + n);
         int ds = numberISBN.length();  //aflam cite cifre contine Stringul introdus de la user cu cifre
-        System.out.println("The number contains " + ds + " numbers.");
-        long[] stringconvertToNumber = new long[numberISBN.length()];
+        System.out.print("The string lenght is: " + ds + "\n");
+        long[] stringconvertToNumber = new long[numberISBN.length() + 1];
         for (int i = 0; i < numberISBN.length(); i++) {
             char c = numberISBN.charAt(i);
             long k = Character.digit(c, 10);
             stringconvertToNumber[i] = k;
         }
-
-        for (long copyNumbers : stringconvertToNumber) {
-            System.out.print(copyNumbers + " ");
-        }
-
-        if (stringconvertToNumber.length != 12) {
-            System.out.println(" is an invalid input");
-        }
-
-        b = 10 - (stringconvertToNumber[0] + (3 * stringconvertToNumber[1]) + stringconvertToNumber[2] + (3 * stringconvertToNumber[3]) + stringconvertToNumber[4] + (3 * stringconvertToNumber[5]) + stringconvertToNumber[6] + (3 * stringconvertToNumber[7]) + stringconvertToNumber[8] + (3 * stringconvertToNumber[9]) + stringconvertToNumber[10] + (3 * stringconvertToNumber[11])) % 10;
-
-        if (b == 10) {
-            System.out.print(0);
-        } else if (b != 10) {
-            System.out.print(b);
+        if (stringconvertToNumber.length != 13) {
+            System.out.println(numberISBN + " is a invalid input.");
+        } else {
+            b = 10 - (stringconvertToNumber[0] + (3 * stringconvertToNumber[1]) + stringconvertToNumber[2] + (3 * stringconvertToNumber[3]) + stringconvertToNumber[4] + (3 * stringconvertToNumber[5]) + stringconvertToNumber[6] + (3 * stringconvertToNumber[7]) + stringconvertToNumber[8] + (3 * stringconvertToNumber[9]) + stringconvertToNumber[10] + (3 * stringconvertToNumber[11])) % 10;
+            System.out.print("The ISBN-13 number is:  ");
+            System.out.print(numberISBN + (b == 10 ? 0 : b));
         }
     }
 }
