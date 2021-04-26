@@ -1,7 +1,5 @@
 package tekWillHomeWorks.homeWork2003.april07Array;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
