@@ -17,39 +17,31 @@ PS: I hope you still remember what non-access modifier needs to be used in metho
 to call methods without an instance.
  */
 public class PerimeterCalculator {
-    private static double Triangle;
-    private static double Square;
-    private static double Rectangle;
-    private static double Quadrilatera;
-    private static double Circle;
-
     public static void main(String[] args) {
-        System.out.println("The periteter of Triangle is: " + PerimeterCalculator.getTriangle(2, 4.4, 6));
-        System.out.println("The perimter of Square is: " + PerimeterCalculator.getSquare(3.8));
-        System.out.println("The perimeter of Rectangle is: " + PerimeterCalculator.getRectangle(4.3, 7.5));
-        System.out.println("The perimeter of Quadrilatera is: " + PerimeterCalculator.getQuadrilatera(3.4, 7.9, 5.7, 14.7));
-        System.out.println("The Circumference of Circle is: " + PerimeterCalculator.getCircle(15, 2));
+        System.out.println("The periteter of Triangle is: " + PerimeterCalculator.getParametru(2, 4.4, 6));
+        System.out.println("The perimter of Square is: " + PerimeterCalculator.getParametru(3.8));
+        System.out.println("The perimeter of Rectangle is: " + PerimeterCalculator.getParametru(4, 7));
+        System.out.println("The perimeter of Quadrilatera is: " + PerimeterCalculator.getParametru(3.4, 7.9, 5.7, 14.7));
+        System.out.println("The Circumference of Circle is: " + PerimeterCalculator.getParametru(15.3, 2.4));
     }
 
-
-    public static double getTriangle(double a, double b, double c) {
+    public static double getParametru(double a, double b, double c) {
         return a + b + c;
     }
 
-    public static double getSquare(double a) {
+    public static double getParametru(double a) {
         return 4 * a * (a - a / 4);
     }
 
-    public static double getRectangle(double a, double b) {
+    public static double getParametru(int a, int b) {
         return 2 * (a + b);
     }
 
-    public static double getQuadrilatera(double a, double b, double c, double d) {
+    public static double getParametru(double a, double b, double c, double d) {
         return a + b + c + d;
     }
 
-    public static double getCircle(double r, double radius) {
+    public static double getParametru(double r, double radius) {
         return 2 * Math.PI * r * (r - radius);
-
     }
 }
